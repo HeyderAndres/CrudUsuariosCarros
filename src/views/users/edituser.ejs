@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include("../partials/head") %> 
+
+<body>
+    <%- include("../partials/header") %> 
+    <section>
+        <article class="form">
+            <h2>Editar Usuario</h2>
+            <form action="/edit/<%=useredit.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+                <label for="nombre">
+                    <p>Nombre:</p>
+                    <input  class="text-form"
+                            type="text" 
+                            name="nombre"
+                            id="nombre"
+                            value="<%= locals.useredit? useredit.nombre:''  %> "
+                    />
+                </label>
+
+                <label for="apellido">
+                    <p>Apellido:</p>
+                    <input  class="text-form"
+                            type="text"
+                            name="apellido"
+                            id="apellido"
+                            value="<%= locals.useredit? useredit.apellido:''  %> "
+                    />
+                </label>
+
+                <label for="email">
+                    <p>Email:</p>
+                    <input  class="text-form" 
+                            type="email" 
+                            name="email" 
+                            id="email"
+                            value="<%= locals.useredit? useredit.email:''   %> "
+                    />
+                </label>
+
+                <label for="password">
+                    <p>Contraseña:</p>
+                    <input class="text-form" 
+                            type="password" 
+                            name="password" 
+                            id="password"/>
+                </label>
+
+                <label  for="image">
+                    <p>Avatar Actual</p>
+                    <div class="image-edit">
+                    <img src="/img/avatar/<%= locals.useredit? useredit.avatar:'' %>" alt="">
+                    </div>
+                    <p>Seleccionar Nueva Imagen</p>
+                    <input  class="text" 
+                            type="file" 
+                            name="image" 
+                            id="image" 
+                            >
+                </label>
+                <span class="buton">
+                    <input class="form-buton" type="submit" value="editar">
+                </span>
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include("../partials/head") %> 
+<body>
+    <%- include("../partials/header") %> 
+    <section>
+        <article class="form">
+            <h2>Editar Producto</h2>
+            <form action="/products/edit/<%= product.id %>/?_method=PUT " method="POST" enctype="multipart/form-data">
+                <label for="marca">
+                    <p>Marca:</p>
+                    <input class="text-form"
+                            type="text"
+                            name="marca"
+                            id="marca"
+                            value="<%=locals.product && product.marca?product.marca:'' %>"
+                    />
+                    <p class="alert"><%= locals.errors && errors.marca? errors.marca.msg:''  %></p>
+                </label>
+
+                <label for="modelo">
+                    <p>Modelo:</p>
+                    <input  class="text-form"
+                            type="text"
+                            name="modelo"
+                            id="modelo"
+                            value="<%=locals.product && product.modelo?product.modelo:'' %>"/>
+                    <p class="alert">
+                        <%=locals.errors && errors.modelo? errors.modelo.msg:''  %> 
+                    </p>
+                </label>
+
+                <label for="anio">
+                    <p>Año:</p>
+                    <input class="text-form"
+                            type="anio" 
+                            name="anio"
+                            id="anio"
+                            value="<%=locals.product && product.anio?product.anio:'' %>"/>
+                    <p class="alert">
+                        <%=locals.errors && errors.anio? errors.anio.msg:''  %> 
+                    </p>
+                </label>
+
+                <label for="descripcion">
+                    <p>descripcion:</p>
+                    <input class="text-form" 
+                            type="descripcion"
+                            name="descripcion"
+                            id="descripcion"
+                            value="<%=locals.product && product.descripcion? product.descripcion:''%>"
+                    />
+                    <p class="alert">
+                        <%=locals.errors && errors.descripcion? errors.descripcion.msg:''  %> 
+                    </p>
+                </label>
+                <label  for="imagen">
+                    <p>Avatar Actual</p>
+                    <div class="image-edit">
+                    <img src="/img/products/<%= locals.product? product.imagen:'' %>" alt="">
+                    </div>
+                    <p>Seleccionar imagen Nueva</p>
+                   <input class="text" type="file" name="imagen" id="imagen">
+                   <p class="alert">
+                    <%=locals.errors && errors.nombre? errors.nombre.msg:''  %> 
+                   </p>
+                </label>
+                <span class="buton">
+                    <input class="form-buton" type="submit" value="enviar">
+                    <input class="form-buton" type="reset" value="borrar">
+                </span>
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include("../partials/head") %> 
+<body>
+    <%- include("../partials/header") %> 
+    <section>
+        <article class="form">
+            <h2>Crear Producto</h2>
+            <form action="/products/create" method="POST" enctype="multipart/form-data">
+                <label for="marca">
+                    <p>Marca:</p>
+                    <input class="text-form"
+                            type="text-form"
+                            name="marca"
+                            id="marca"
+                            value="<%=locals.old && old.marca?old.marca:'' %>"
+                    />
+                    <p class="alert"><%= locals.errors && errors.marca? errors.marca.msg:''  %></p>
+                </label>
+
+                <label for="modelo">
+                    <p>Modelo:</p>
+                    <input  class="text-form"
+                            type="text-form"
+                            name="modelo"
+                            id="modelo"
+                            value="<%=locals.old && old.modelo?old.modelo:'' %>"/>
+                    <p class="alert">
+                        <%=locals.errors && errors.modelo? errors.modelo.msg:''  %> 
+                    </p>
+                </label>
+
+                <label for="anio">
+                    <p>Año:</p>
+                    <input class="text-form"
+                            type="anio" 
+                            name="anio"
+                            id="anio"
+                            value="<%=locals.old && old.anio?old.anio:'' %>"/>
+                    <p class="alert">
+                        <%=locals.errors && errors.anio? errors.anio.msg:''  %> 
+                    </p>
+                </label>
+
+                <label for="descripcion">
+                    <p>descripcion:</p>
+                    <input class="text-form" type="descripcion" name="descripcion" id="descripcion"
+                    />
+                    <p class="alert">
+                        <%=locals.errors && errors.descripcion? errors.descripcion.msg:''  %> 
+                    </p>
+                </label>
+                <label  for="imagen">
+                    <p>imagen</p>
+                   <input type="file" name="imagen" id="imagen">
+                   <p class="alert">
+                    <%=locals.errors && errors.nombre? errors.nombre.msg:''  %> 
+                   </p>
+                </label>
+                <span class="buton">
+                    <input class="form-buton" type="submit" value="enviar">
+                    <input class="form-buton" type="reset" value="borrar">
+                </span>
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>

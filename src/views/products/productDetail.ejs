@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include("../partials/head") %> 
+
+<body>
+    <%- include("../partials/header") %> 
+           <% if (locals.product) { %>
+
+            <li>
+                <img src="./img/avatar/<%=product.imagen %> " alt="imagen de prueba">
+                <p class="user">Marca: <%=product.marca%> </p>
+                <p class="user">Modelo: <%=product.modelo%></p>
+                <p class="user">Añoo: <%=product.anio%></p>
+                <form class="formbuton" action="products/edit/<%= product.id%>" method="GET">
+                    <input class="form-buton" type="submit" value="editar">
+                </form>
+                <form class="formbuton" action="/products/delete/<%= product.id%>?_method=DELETE" method="POST">
+                    <input class="form-buton" type="submit" value="eliminar">
+                </form>
+
+            </li>
+            <% }else{ %>
+                <h2>Error verifique que el producto exista <a href="/">este enlace</a></h2>
+            <% } %> 
+
+</body>
+
+</html>

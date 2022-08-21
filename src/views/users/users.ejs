@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include("../partials/head") %> 
+
+<body>
+    <div class="user-list">
+    <%- include("../partials/header") %> 
+           <% if (locals.users && users.length > 0) { %>
+            <% for( let i = 0; i < users.length; i++ ) { %>
+            <li>
+               <div class="image">
+                <img src="./img/avatar/<%=users[i].avatar %> " alt="imagen de prueba">
+               </div>
+               <div class="description">
+                <p >Nombre: <%=users[i].nombre%> </p>
+                <p >Apellido: <%=users[i].apellido%></p>
+                <p >Email: <%=users[i].email%></p>
+            </div>
+                <% if (userLogged.id == users[i].id) { %>
+                <form  action="users/edit/<%= users[i].id%>" method="GET">
+                    <input class="form-buton" type="submit" value="editar">
+                </form>
+                <form  action="/users/eliminar/<%= users[i].id%>?_method=DELETE" method="POST">
+                    <input class="form-buton" type="submit" value="eliminar">
+                </form>
+                <% } %>
+            </li>
+            <% }}else{ %>
+                <h2>No tenemos usuarios en la base de datos por favor registre uno en <a href="/">este enlace</a></h2>
+            <% } %> 
+</div>
+</body>
+
+</html>

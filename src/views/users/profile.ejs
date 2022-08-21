@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include("../partials/head") %> 
+
+<body>
+    <%- include("../partials/header") %> 
+    <div class="user-list view-profile">
+    
+            <% if (locals.user) { %>
+                <h2 id="profile">Perfil de Usuario</h2>
+            <li id="profile">
+                <div class="image">
+                <img class="profile" src="/img/avatar/<%=user.avatar %> " alt="imagen de prueba">
+                </div>
+                <div class="description">
+                <p>Nombre: <%=user.nombre%> </p>
+                <p>Apellido: <%=user.apellido%></p>
+                <p>Email: <%=user.email%></p>
+                </div>
+                <form  action="/users/edit/<%= user.id%>" method="GET">
+                    <input class="form-buton" type="submit" value="editar">
+                </form>
+                <form  action="/users/eliminar/<%= user.id%>?_method=DELETE" method="POST">
+                    <input class="form-buton" type="submit" value="eliminar">
+                </form>
+
+            </li>
+            <% }else{ %>
+                <h2>No tenemos usuarios en la base de datos por favor registre uno en <a href="/">este enlace</a></h2>
+            <% } %> 
+</div>
+</body>
+
+</html>

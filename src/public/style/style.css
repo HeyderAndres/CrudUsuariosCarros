@@ -1,0 +1,331 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+html{
+    position:relative;
+    min-height: 100%;
+}  
+body{
+    background-color: black;
+    color: white;
+    margin-bottom: 7vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    width: 100vw;
+    background-color: white;
+}
+
+header nav{
+    width: 95%;
+    margin: auto;
+    padding: 5px;  
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav ul li{
+    width: 100%;
+    padding: 5px;
+    list-style: none;
+    margin:2px;
+    text-align: center;
+    display: none;
+}
+.mostrar-menu{
+    display: block;
+}
+
+header nav ul li.menu{
+    display: block;
+}
+
+header nav ul li:hover{
+    background-color: rgb(0, 74, 77);
+    border-radius: 15px;
+}
+header nav ul li:hover a.button-nav{
+    color: white;
+}
+
+header nav ul li a.button-nav{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding:5px 0 5px 0;
+    font-weight: bold;
+    font-size: 1em;
+    color: rgb(0, 74, 77);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/******************** portada index *****************************/
+div#container-portada{
+    width: 100vw;
+    height: 260px;
+    margin: auto;
+    overflow: hidden;
+}
+
+div#container-portada img{
+   width: 100%;
+   object-fit: cover;
+}
+/********************************************************************/
+footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, rgb(0,74,77,0.5), black);
+}
+
+footer p{
+    text-transform: capitalize;
+}
+
+/********************** formularios *************************/
+section article.form {
+    width: 90vw;
+    margin: auto;
+}
+
+section article h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+section article form{
+    font-size: large;
+    background-color: rgba(0, 74, 77,0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+section article form label p{
+    text-align: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+section article form input.text-form{
+    margin:5px auto;
+    color: white;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: white 1px solid;
+    text-align: left;
+}
+section article form input.text-form:focus{
+    outline: none;
+    border-bottom:2px white solid;
+}
+
+section article form span.buton{
+    display:flex;
+    justify-content: center;
+}
+
+input.form-buton{
+    background-color: white;
+    color:rgb(0, 74, 77);
+    font-weight: bold;
+    width: auto;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    letter-spacing: 0.3ch;
+    text-transform: uppercase;
+}
+
+input.form-buton:hover{
+    color:white;
+    background-color: rgb(0, 74, 77);
+    box-shadow: 0.5px 0.5px 2px 2px rgb(0, 29, 31);
+}
+
+/**********************************listas de productos***************/
+div.product-list, div.user-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.product-list>li, div.user-list>li{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 95%;
+    height: 300px;
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+    background-color: rgba(0, 74, 77,0.5);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+
+div.product-list li div.image{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+div.user-list li div.image{
+    width: 50%;
+    height: 60%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+div.product-list li img{
+   width: 100%;
+}
+div.user-list li img{
+    height: 100%;
+ }
+
+ div.image-edit img{
+    width: 100%;
+    margin-top: 10px;
+ }
+
+div.product-list li div.description, div.user-list li div.description{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 0.2ch;
+}
+div.user-list li div.description{
+    align-items: center;
+}
+div.product-list li div.description p{
+    padding-bottom:5px ;
+}
+
+#profile{
+    margin-top: 10px;
+}
+
+@media (min-width:768px){
+
+    header nav ul li.menu{
+        display: none;
+    }
+    header nav {
+        display: flex;
+        justify-content:space-around;
+    }
+    header nav ul{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    header nav ul li{
+    width: auto;
+    padding: 5px 7px;
+    display: block;
+    }
+
+    div#container-portada{
+        height: 350px;
+    }
+    section{
+        height: 80vh;
+        display: flex;
+    }
+    section article.form{
+        width: 70vw;
+        align-items: center;
+    }
+
+    div.product-list li div.image{
+        width: 50%;
+        height: 75%;
+        border-radius: 10px;
+    }
+    div.product-list li img{
+        height: 100%;
+    }
+    div.product-list li div.description{
+        width: 45%;
+        height: 75%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 74, 77,0.3);
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    div.product-list li div.description p{
+        padding-bottom: 15px;
+    }
+
+    div.user-list>li{
+        width: 30%;
+        margin: 1%;
+        overflow: hidden;
+    }
+
+    div.user-list li div.image{
+        width: 80%;
+    }
+
+    div.view-profile{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.user-list>li#profile{
+        width: 70%;
+        height: 70%;
+    } 
+
+}
+
+
+@media (min-width:1024px){
+    div#container-portada{
+        height:75%;
+    }
+
+    header nav ul li{
+        padding: 5px 25px;
+        }
+
+    section article.form{
+        width: 40vw;
+    }
+
+    div.user-list>li{
+        width: 23%;
+        margin: 1%;
+    }
+    div.user-list>li#profile{
+        width: 40%;
+        height: 80%;
+    } 
+}

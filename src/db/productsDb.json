@@ -1,0 +1,170 @@
+[
+ {
+  "id": "1",
+  "marca": "chevrolet",
+  "modelo": "as",
+  "anio": "1522",
+  "descripcion": "auto de lujo todo terreno con gran velocidad y acabados super lindos",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 2,
+  "marca": "GMC",
+  "modelo": "Savana 2500",
+  "anio": 1998,
+  "descripcion": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 3,
+  "marca": "Toyota",
+  "modelo": "Solara",
+  "anio": 2003,
+  "descripcion": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 4,
+  "marca": "Mitsubishi",
+  "modelo": "Starion",
+  "anio": 1984,
+  "descripcion": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 5,
+  "marca": "Volvo",
+  "modelo": "940",
+  "anio": 1994,
+  "descripcion": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 6,
+  "marca": "Ford",
+  "modelo": "Mustang",
+  "anio": 2008,
+  "descripcion": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 7,
+  "marca": "GMC",
+  "modelo": "Canyon",
+  "anio": 2005,
+  "descripcion": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 8,
+  "marca": "Toyota",
+  "modelo": "RAV4",
+  "anio": 1998,
+  "descripcion": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 9,
+  "marca": "Aston Martin",
+  "modelo": "Vantage",
+  "anio": 2009,
+  "descripcion": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 10,
+  "marca": "Lincoln",
+  "modelo": "Navigator L",
+  "anio": 2011,
+  "descripcion": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 11,
+  "marca": "Ford",
+  "modelo": "Escort",
+  "anio": 1989,
+  "descripcion": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 12,
+  "marca": "Isuzu",
+  "modelo": "Trooper",
+  "anio": 2001,
+  "descripcion": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 13,
+  "marca": "Kia",
+  "modelo": "Spectra",
+  "anio": 2000,
+  "descripcion": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 14,
+  "marca": "Aston Martin",
+  "modelo": "DBS",
+  "anio": 2009,
+  "descripcion": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 15,
+  "marca": "Nissan",
+  "modelo": "240SX",
+  "anio": 1998,
+  "descripcion": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 16,
+  "marca": "Ford",
+  "modelo": "Bronco",
+  "anio": 1994,
+  "descripcion": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 17,
+  "marca": "Lincoln",
+  "modelo": "MKS",
+  "anio": 2013,
+  "descripcion": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 18,
+  "marca": "Dodge",
+  "modelo": "Stratus",
+  "anio": 1998,
+  "descripcion": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 19,
+  "marca": "Jeep",
+  "modelo": "Compass",
+  "anio": 2012,
+  "descripcion": "Fusce consequat. Nulla nisl. Nunc nisl.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 20,
+  "marca": "Lincoln",
+  "modelo": "Town Car",
+  "anio": 1992,
+  "descripcion": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+  "imagen": "imagen de prueba.jpg"
+ },
+ {
+  "id": 21,
+  "marca": "chevrolet",
+  "modelo": "camaro",
+  "anio": "2000",
+  "descripcion": "salñkjfñkasjflñksjñfjsa asñlfkjsañfjsñaljfñlsajfñlsa askljflñsadkjflñsjflksaj fasñfkljasñlkfjasdñfjsñlakfj sañkfjsañlf jsañlkfjaslñkfjsfsafs ",
+  "imagen": "imagen de prueba.jpg"
+ }
+]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head") %>
+
+<body>
+    <div class="product-list">
+    <%- include("../partials/header") %>
+    <% if (locals.products && products.length > 0) { %>
+    <% for( let i = 0; i < products.length; i++ ) { %>
+    <li>
+        <div class="image">
+            <img src="./img/products/<%=products[i].imagen %> " alt="imagen de prueba">
+        </div>
+        <div class="description">
+        <p>Marca: <%=products[i].marca%> </p>
+        <p>Modelo: <%=products[i].modelo%></p>
+        <p>Año: <%=products[i].anio%></p>
+    </div>
+        
+        <form class="" action="products/detail/<%=products[i].id%>" method="GET">
+            <input class="form-buton" type="submit" value="Detalle">
+        </form>
+        <form class="" action="products/edit/<%= products[i].id%>" method="GET">
+            <input class="form-buton" type="submit" value="editar">
+        </form>
+        <form class="" action="/products/delete/<%= products[i].id%>?_method=DELETE" method="POST">
+            <input class="form-buton" type="submit" value="eliminar">
+        </form>
+
+    </li>
+    <% }}else{ %>
+    <h2>No tenemos usuarios en la base de datos por favor registre uno en <a href="/">este enlace</a></h2>
+    <% } %>
+    <%- include ("../partials/footer") %> 
+</div>
+</body>
+
+</html>

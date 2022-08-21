@@ -1,0 +1,23 @@
+<header>
+    <nav>
+        
+        <ul>
+            <li class="menu"><a class="button-nav menu">Menu ▼</a></li>
+            <li ><a class="button-nav" href="/"> Home</a></li>
+            <% if (locals.isLogged) { %>
+            <li ><a class="button-nav" href="/users">All Users</a> </li>
+            <li ><a class="button-nav" href="/products">All Products</a> </li>
+            <% } %>
+        </ul>
+        <ul>
+            <% if (!locals.isLogged) { %>
+            <li ><a class="button-nav" href="/users/create">Register</a> </li>
+            <li ><a class="button-nav" href="/users/login">Login</a></li>
+            <% }else{ %>
+            <li><a class="button-nav" href="/products/create">Crear producto</a></li>
+            <li ><a class="button-nav" href="/users/profile">Profile</a> </li>
+            <li ><a class="button-nav" href="/users/logout">Logout</a> </li>
+            <% } %>
+        </ul>
+    </nav>
+</header>
